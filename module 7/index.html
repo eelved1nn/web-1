@@ -4,16 +4,17 @@
  </head>
 <body>
     
-
-       <form>
+<form>
+<fieldset>
+  <legend>Personal Info : </legend>
   <label for="Firstname">Firstname :</label><br>
-  <input type="text" id="Firstname" name="Firstname"><br>
+  <input type="text" id="Firstname" name="Firstname" placeholder="First Name" required> <br>
   <label for="Lastname">Lastname :</label><br>
   <input type="text" id="Lastname" name="Firstname"><br>
   <label for="email">email: </label><br>
-  <input type="email" name="email" id="email"><br>
+  <input type="email" name="email" id="email" disabled><br>
   <label for="password">password: </label><br>
-  <input type="password" id="password" name="password"><br>
+  <input type="password" id="password" name="password" size="40" required><br>
 
 
   <label>hobbies : </label><br>
@@ -47,9 +48,9 @@
 <option value="parrot">parrot</option>
 </select><br></br>
 <label for="message">leave a message : </label>
-<textarea name="message" rows="10" cols="10" ></textarea> <br>
+<textarea name="message" rows="10" cols="10" maxlength="50" ></textarea> <br>
 <input type="submit" value="submit"><br></br>
-
+</fieldset>
 </form>
 </body>
 
